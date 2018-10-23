@@ -19,4 +19,11 @@ class BusTest < MiniTest::Test
     actual = @bus1.destination
     assert_equal(expected, actual)
   end
+
+  def test_drive_method
+    expected = "Brum brum"
+    actual = @bus1.drive
+    assert_equal(expected, actual)
+  end
+
 end
